@@ -1,6 +1,6 @@
 use v6.d;
 
-enum DurType <Y M D YMD>;
+enum DurType is export <Y M D YMD>;
 
 sub datediff(Date:D $dt_start, Date:D $dt_end, DurType $pattern ) is export {
     my Int $dur_day = $dt_end - $dt_start ; 
